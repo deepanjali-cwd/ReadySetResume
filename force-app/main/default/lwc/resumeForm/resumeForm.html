@@ -1,0 +1,79 @@
+<template>
+    <!-- FORM -->
+    <lightning-input label="Full Name" name="fullName" value={fullName} onchange={handleChange}></lightning-input>
+    <lightning-input label="Email" name="email" value={email} onchange={handleChange}></lightning-input>
+    <lightning-input label="Phone Number" name="phone" type="tel" value={phone} onchange={handleChange}></lightning-input>
+    <lightning-textarea label="Education" name="education" value={education} onchange={handleChange}></lightning-textarea>
+
+    <!-- 🔽 Template Switch Dropdown -->
+    <lightning-combobox
+        label="Select Resume Template"
+        value={selectedTemplate}
+        options={templateOptions}
+        onchange={handleTemplateChange}>
+    </lightning-combobox>
+
+    <!-- 🔽 Role Dropdown -->
+    <lightning-combobox
+        label="Select Role"
+        name="role"
+        value={selectedRole}
+        options={roleOptions}
+        onchange={handleRoleChange}>
+    </lightning-combobox>
+
+    <lightning-textarea label="Skills" name="skills" value={skills} onchange={handleChange}></lightning-textarea>
+    <lightning-textarea label="Projects" name="projects" value={projects} onchange={handleChange}></lightning-textarea>
+    <lightning-textarea label="Experience" name="experience" value={experience} onchange={handleChange}></lightning-textarea>
+    <lightning-textarea label="Certifications" name="certifications" value={certifications} onchange={handleChange}></lightning-textarea>
+
+    <div class="slds-m-top_medium">
+        <lightning-button variant="brand" label="Save Resume" onclick={handleSave}></lightning-button>
+        <lightning-button class="slds-m-left_small" variant="neutral" label="Preview" onclick={handlePreview}></lightning-button>
+    </div>
+
+    <!-- PREVIEW SECTION -->
+    <template if:true={showPreview}>
+
+        <!-- MINIMAL TEMPLATE -->
+        <template if:true={isMinimalTemplate}>
+            <div class="slds-box slds-theme_default slds-m-top_medium">
+                <h2 class="slds-text-heading_medium">Minimal Resume Preview</h2>
+                <p><strong>Name:</strong> {fullName}</p>
+                <p><strong>Email:</strong> {email}</p>
+                <p><strong>Phone:</strong> {phone}</p>
+                <p><strong>Skills:</strong> {skills}</p>
+            </div>
+
+        </template>
+
+        <!-- SECTIONED TEMPLATE -->
+        <template if:true={isSectionedTemplate}>
+            <div class="slds-box slds-theme_default slds-m-top_medium">
+                <h2 class="slds-text-heading_medium">Sectioned Resume Preview</h2>
+                <div class="slds-m-bottom_small">
+                    <strong>Personal Info</strong><br/>
+                    Name: {fullName}<br/>
+                    Email: {email}<br/>
+                    Phone: {phone}
+                </div>
+                <div class="slds-m-bottom_small">
+                    <strong>Education:</strong><br/>{education}
+                </div>
+                <div class="slds-m-bottom_small">
+                    <strong>Skills:</strong><br/>{skills}
+                </div>
+                <div class="slds-m-bottom_small">
+                    <strong>Projects:</strong><br/>{projects}
+                </div>
+                <div class="slds-m-bottom_small">
+                    <strong>Experience:</strong><br/>{experience}
+                </div>
+                <div class="slds-m-bottom_small">
+                    <strong>Certifications:</strong><br/>{certifications}
+                </div>
+            </div>
+        </template>
+
+    </template>
+</template>
