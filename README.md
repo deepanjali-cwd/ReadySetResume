@@ -1,18 +1,31 @@
-# Salesforce DX Project: Next Steps
+# ReadySetResume 🧑‍💻
 
-Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
+A simple, beginner-friendly **Resume Builder** that demonstrates the practical use of **Salesforce LWC** and **Apex** to create a dynamic, template-based resume application.
 
-## How Do You Plan to Deploy Your Changes?
+---
 
-Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
+## ✨ Features
+- Role-based skill suggestions
+- Two resume templates (Minimal & Sectioned)
+- Resume preview before saving
+- Save resume using Apex backend
 
-## Configure Your Salesforce DX Project
+---
 
-The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
+## 🛠 Tech Stack
+- LWC (Lightning Web Components)
+- Apex
+- SLDS (Salesforce Styling)
+- Git & GitHub
 
-## Read All About It
+---
 
-- [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
-- [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
-- [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
-- [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
+## 🚀 How to Use
+1. Open in a Salesforce Dev Org
+2. Fill in resume details
+3. Select a role → auto-suggested skills
+4. Preview and save resume
+
+---
+
+## 💡 Crafted with curiosity & caffeine by Deepanjali ☕🚀
