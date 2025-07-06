@@ -28,4 +28,6 @@ A simple, beginner-friendly **Resume Builder** that demonstrates the practical u
 
 ---
 
-## 💡 Crafted with curiosity & caffeine by Deepanjali ☕🚀
+> 📌 **Note:**  
+> This project showcases my practical experience with Salesforce LWC and Apex in a real-world use case.
+
